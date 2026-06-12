@@ -2,25 +2,25 @@
    GLOBAL
 ========================== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Cambria, serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Cambria, serif;
 }
 
-body {
-  background: #f5f3f4;
+body{
+  background:#f5f3f4;
 }
 
-a {
-  text-decoration: none;
+a{
+  text-decoration:none;
 }
 
-.signup-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.signup-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 
   background:
     radial-gradient(
@@ -42,220 +42,234 @@ a {
    NAVBAR
 ========================== */
 
-.navbar {
-  height: 80px;
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 60px;
-  border-bottom: 1px solid #ececec;
+.navbar{
+  height:80px;
+  background:#ffffff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 60px;
+  border-bottom:1px solid #ececec;
 }
 
-.logo {
-  color: #4d002d;
-  font-size: 26px;
-  font-weight: bold;
+.logo{
+  color:#4d002d;
+  font-size:26px;
+  font-weight:bold;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:32px;
 }
 
-.nav-links a {
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.3s ease;
-  position: relative;
+.nav-links a{
+  color:#333;
+  font-size:16px;
+  font-weight:bold;
+  transition:0.3s ease;
+  position:relative;
 }
 
 /* Hover */
 
-.nav-links a:hover {
-  color: #730042;
+.nav-links a:hover{
+  color:#730042;
 }
 
 /* Underline Animation */
 
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -6px;
-  left: 0;
-  background: #730042;
-  transition: 0.3s;
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  bottom:-6px;
+  left:0;
+  background:#730042;
+  transition:0.3s;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+.nav-links a:hover::after{
+  width:100%;
 }
 
-/* Signup same style as others */
+/* Signup same as others */
 
-.signup-btn {
-  background: transparent !important;
-  color: #333 !important;
-  padding: 0;
-  border-radius: 0;
-  font-weight: bold;
+.signup-btn{
+  background:transparent !important;
+  color:#333 !important;
+  padding:0;
+  border-radius:0;
+  font-weight:bold;
 }
 
-.signup-btn:hover {
-  background: transparent !important;
-  color: #730042 !important;
+.signup-btn:hover{
+  background:transparent !important;
+  color:#730042 !important;
 }
 
 /* ==========================
    SIGNUP CARD
 ========================== */
 
-.signup-card {
-  width: 760px;
-  background: white;
-  margin: 50px auto;
-  padding: 45px;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+.signup-card{
+  width:760px;
+  background:white;
+  margin:50px auto;
+  padding:45px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.signup-card h1 {
-  text-align: center;
-  font-size: 40px;
-  color: #4d002d;
-  margin-bottom: 12px;
+.signup-card h1{
+  text-align:center;
+  font-size:40px;
+  color:#4d002d;
+  margin-bottom:12px;
 }
 
-.subtitle {
-  text-align: center;
-  color: #666;
-  margin-bottom: 35px;
-  font-size: 16px;
-  line-height: 1.6;
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:35px;
+  font-size:16px;
+  line-height:1.6;
 }
 
 /* ==========================
    FORM
 ========================== */
 
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
+.input-group{
+  display:flex;
+  flex-direction:column;
 }
 
-.input-group label {
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-  font-size: 15px;
+.input-group label{
+  margin-bottom:8px;
+  font-weight:bold;
+  color:#333;
+  font-size:15px;
 }
 
 input,
-select {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  outline: none;
-  font-size: 15px;
-  transition: 0.3s;
-  background: white;
+select{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  outline:none;
+  font-size:15px;
+  transition:0.3s;
+  background:white;
 }
 
 input:focus,
-select:focus {
-  border: 1px solid #C2188B;
-  box-shadow: 0 0 8px rgba(194, 24, 139, .15);
+select:focus{
+  border:1px solid #C2188B;
+  box-shadow:0 0 8px rgba(194,24,139,.15);
 }
 
-.full-width {
-  margin: 22px 0;
+/* Full Width Dropdowns */
+
+.full-width{
+  margin:22px 0;
+}
+
+/* Better dropdown spacing */
+
+select{
+  cursor:pointer;
 }
 
 /* ==========================
    BUTTON
 ========================== */
 
-.signup-button {
-  width: 100%;
-  background: #730042;
-  color: white;
-  border: none;
-  padding: 16px;
-  border-radius: 12px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+.signup-button{
+  width:100%;
+  background:#730042;
+  color:white;
+  border:none;
+  padding:16px;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:10px;
 }
 
-.signup-button:hover {
-  background: #5b0036;
-  transform: translateY(-2px);
+.signup-button:hover{
+  background:#5b0036;
+  transform:translateY(-2px);
 }
 
 /* ==========================
    BOTTOM TEXT
 ========================== */
 
-.bottom-text {
-  text-align: center;
-  margin-top: 25px;
-  color: #555;
+.bottom-text{
+  text-align:center;
+  margin-top:25px;
+  color:#555;
 }
 
-.bottom-text a {
-  color: #C2188B;
-  font-weight: bold;
+.bottom-text a{
+  color:#C2188B;
+  font-weight:bold;
+}
+
+.bottom-text a:hover{
+  text-decoration:underline;
 }
 
 /* ==========================
    FOOTER
 ========================== */
 
-.footer {
-  background: #EAD7E4;
-  border-top: 1px solid #d6c1ce;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 50px;
-  margin-top: auto;
+.footer{
+  background:#EAD7E4;
+  border-top:1px solid #d6c1ce;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 50px;
+  margin-top:auto;
 }
 
-.footer-logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #5B0036;
+.footer-logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#5B0036;
 }
 
-.footer-links {
-  display: flex;
-  gap: 25px;
+.footer-links{
+  display:flex;
+  gap:25px;
 }
 
-.footer-links a {
-  color: #5B0036;
-  transition: 0.3s;
+.footer-links a{
+  color:#5B0036;
+  transition:0.3s;
+  cursor:pointer;
 }
 
-.footer-links a:hover {
-  color: #C2188B;
+.footer-links a:hover{
+  color:#C2188B;
 }
 
-.copyright {
-  color: #666;
-  font-size: 14px;
+.copyright{
+  color:#666;
+  font-size:14px;
 }
 
 /* ==========================
