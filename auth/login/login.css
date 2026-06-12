@@ -1,0 +1,444 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, serif;
+}
+
+body {
+  background: #f5f3f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f3f4;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4d002d;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo i {
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+
+.nav-links a:hover {
+  color: #730042;
+}
+
+/* Underline Hover Animation */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: #730042;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Signup same as others */
+
+.signup-btn {
+  background: transparent !important;
+  color: #333 !important;
+  padding: 0;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.signup-btn:hover {
+  background: transparent !important;
+  color: #730042 !important;
+}
+
+/* ===========================
+   LOGIN CONTENT
+=========================== */
+
+.login-container {
+  flex: 1;
+  display: flex;
+}
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.left-section {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.warehouse-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(78, 0, 45, 0.60);
+}
+
+.left-content {
+  position: absolute;
+  bottom: 60px;
+  left: 45px;
+  right: 45px;
+  color: white;
+  z-index: 2;
+}
+
+.tag {
+  background: rgba(194, 24, 139, 0.85);
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.left-content h1 {
+  margin-top: 22px;
+  font-size: 56px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.left-content p {
+  margin-top: 22px;
+  width: 75%;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.stats {
+  display: flex;
+  gap: 70px;
+  margin-top: 45px;
+}
+
+.stat-box h2 {
+  font-size: 40px;
+}
+
+.stat-box span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ===========================
+   RIGHT SECTION
+=========================== */
+
+.right-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-card {
+  width: 460px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+}
+
+.login-card h1 {
+  color: #4d002d;
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 0 15px;
+  background: white;
+  font-size: 15px;
+  outline: none;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-group {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 6px;
+}
+
+.input-group i {
+  color: #8a8a8a;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 15px;
+  background: transparent;
+}
+
+.eye-icon {
+  cursor: pointer;
+}
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-row a {
+  color: #c2188b;
+  font-size: 14px;
+}
+
+/* ===========================
+   REMEMBER
+=========================== */
+
+.remember-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.remember-section input {
+  width: 16px;
+  height: 16px;
+}
+
+.remember-section label {
+  margin: 0;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.login-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  background: #730042;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.login-btn:hover {
+  background: #5b0036;
+}
+
+.login-btn i {
+  margin-left: 8px;
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.divider {
+  height: 1px;
+  background: #ececec;
+  margin: 28px 0;
+}
+
+.bottom-text {
+  text-align: center;
+  color: #555;
+}
+
+.bottom-text a {
+  color: #c2188b;
+  font-weight: 600;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+  height: 80px;
+  background: #061223;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-links a {
+  color: #d8d8d8;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-copy {
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+  .left-section{
+    display:none;
+  }
+
+  .right-section{
+    width:100%;
+  }
+
+  .navbar{
+    padding:0 30px;
+  }
+
+  .footer{
+    flex-direction:column;
+    height:auto;
+    gap:15px;
+    padding:20px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:20px;
+  }
+
+  .nav-links{
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .login-card{
+    width:95%;
+    padding:30px;
+  }
+
+  .login-card h1{
+    font-size:34px;
+  }
+
+  .footer-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
